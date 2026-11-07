@@ -1,0 +1,32 @@
+{
+  "rows": 48187,
+  "columns": [
+    "holiday",
+    "temp",
+    "rain_1h",
+    "snow_1h",
+    "clouds_all",
+    "weather_main",
+    "weather_description",
+    "date_time",
+    "traffic_volume",
+    "temperature_c",
+    "holiday_flag",
+    "rain_flag",
+    "snow_flag",
+    "hour",
+    "day_of_week",
+    "month",
+    "is_weekend",
+    "peak_hour",
+    "hour_sin",
+    "hour_cos"
+  ],
+  "mean_traffic_volume": 3259.618133521489,
+  "median_traffic_volume": 3379.0,
+  "max_traffic_volume": 7280.0,
+  "min_traffic_volume": 0.0,
+  "mean_temp_k": 281.20499450059145,
+  "holiday_flag_rate": 0.001265901591715608,
+  "rain_flag_rate": 0.07194886587668874
+}

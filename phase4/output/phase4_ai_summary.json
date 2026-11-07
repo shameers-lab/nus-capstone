@@ -1,0 +1,47 @@
+{
+  "explainability": {
+    "selected_features": [
+      "hour",
+      "is_weekend",
+      "peak_hour",
+      "hour_sin",
+      "hour_cos"
+    ],
+    "feature_importance": {
+      "hour": 6827.957580368133,
+      "is_weekend": 2416.5620456054385,
+      "peak_hour": 12519.415698098437,
+      "hour_sin": 3055.2103461522415,
+      "hour_cos": 67654.7832658665
+    },
+    "top_feature": "hour_cos"
+  },
+  "recommendation_system": {
+    "recommended_low_traffic_hours": [
+      3,
+      2,
+      1,
+      4,
+      0
+    ],
+    "recommended_avoid_hours": [
+      16,
+      17,
+      15,
+      14,
+      7
+    ],
+    "rain_related_traffic_mean": 3291.845687914624,
+    "dry_related_traffic_mean": 3257.119633273703,
+    "message": "Travel before 06:00 or after 20:00 when possible to avoid the strongest commuter congestion. Expect higher traffic during rainy peak hours."
+  },
+  "deep_learning_proxy": {
+    "model_type": "RandomForestRegressor",
+    "metrics": {
+      "mae": 287.2427651049882,
+      "rmse": 490.54523533670573,
+      "r2": 0.9398101299819019
+    },
+    "notes": "This serves as a practical deep-learning-style ensemble baseline for traffic prediction and supports later neural network implementation if needed."
+  }
+}

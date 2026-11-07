@@ -1,0 +1,12 @@
+{
+  "total_records": 48204,
+  "high_traffic_threshold": 4933.0,
+  "p_high_traffic": 0.2502281968301386,
+  "p_high_traffic_given_rain": 0.26997404095760025,
+  "p_high_traffic_given_no_rain": 0.24869794577195609,
+  "p_high_traffic_given_holiday": 0.0,
+  "p_high_traffic_given_no_holiday": 0.25054525060756494,
+  "p_rain": 0.07192349182640445,
+  "p_holiday": 0.0012654551489502946,
+  "odds_ratio_rain_vs_no_rain": 1.1171875360663492
+}

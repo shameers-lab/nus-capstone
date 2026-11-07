@@ -1,0 +1,10 @@
+2026-11-04 14:30:50,981 INFO Starting Phase 2 pipeline for Metro traffic dataset.
+2026-11-04 14:30:51,038 INFO Schema validation passed. Found 9 columns.
+2026-11-04 14:30:51,039 INFO Initial rows: 48204
+2026-11-04 14:30:51,106 INFO Removed rows with invalid date_time: 0
+2026-11-04 14:30:51,161 INFO Removed duplicate rows: 17
+2026-11-04 14:30:51,169 INFO Removed outliers based on IQR: 0
+2026-11-04 14:30:51,184 INFO Removed rows with missing values in required numeric fields.
+2026-11-04 14:30:51,230 INFO Cleaning complete. Final rows: 48187
+2026-11-04 14:30:51,972 INFO Phase 2 pipeline complete.
+2026-11-04 14:30:51,973 INFO Saved dataset to D:\PhotonUser\Shameer\Capstone\phase2\output\cleaned_traffic_data.csv

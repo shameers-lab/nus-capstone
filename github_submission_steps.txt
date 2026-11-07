@@ -1,0 +1,182 @@
+GitHub Submission Steps for Capstone Project
+
+This is a beginner-friendly guide. Follow it in order.
+
+------------------------------------------------------------
+STEP 1: CREATE A GITHUB ACCOUNT
+------------------------------------------------------------
+1. Open: https://github.com
+2. Click Sign up
+3. Enter your email and create a password
+4. Choose a username you will remember
+5. Complete the signup process
+6. If you are asked to choose a plan, select the free plan
+
+Important:
+- Use a public repository unless your instructor says you must use a private one
+- A public repo is the easiest option for grading
+
+------------------------------------------------------------
+STEP 2: CREATE A NEW GITHUB REPOSITORY
+------------------------------------------------------------
+1. Log in to GitHub
+2. Click the green button: New repository
+3. Enter a repository name, for example:
+   - traffic-volume-capstone
+   - interstate94-traffic-analysis
+   - capstone-traffic-forecasting
+4. Choose Public
+5. Do not initialize with a README if you already have one in your local project folder
+6. Click Create repository
+
+You will see a page with a remote URL like this:
+https://github.com/shameers-lab/nus-capstone.git
+
+Keep that URL. You will use it in the next step.
+
+------------------------------------------------------------
+STEP 3: OPEN POWERSHELL IN YOUR PROJECT FOLDER
+------------------------------------------------------------
+Open PowerShell and go to this folder:
+D:\PhotonUser\Shameer\Capstone
+
+If you are unsure how to do that:
+1. Open PowerShell
+2. Type: cd "D:\PhotonUser\Shameer\Capstone"
+3. Press Enter
+
+You should now be in the project folder.
+
+------------------------------------------------------------
+STEP 4: CHECK YOUR PROJECT FOLDER
+------------------------------------------------------------
+Before uploading, make sure your folder contains:
+- README.md
+- requirements.txt
+- data/raw/Metro_Interstate_Traffic_Volume.csv
+- phase1/
+- phase2/
+- phase3/
+- phase4/
+- final/
+- github_submission_steps.txt
+- project_learning_guide.txt
+
+If any important folder is missing, fix it before uploading.
+
+------------------------------------------------------------
+STEP 5: RUN THESE GIT COMMANDS
+------------------------------------------------------------
+In PowerShell, run the following commands one by one:
+
+1. git init
+2. git add .
+3. git commit -m "Initial capstone project upload"
+4. git branch -M main
+5. git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
+6. git push -u origin main
+
+What each command does:
+- git init = starts Git tracking in your project folder
+- git add . = adds all files to Git
+- git commit = saves a version of your project
+- git branch -M main = sets the main branch name
+- git remote add origin = connects your folder to GitHub
+- git push -u origin main = uploads everything to GitHub
+
+Important:
+Replace:
+- YOUR_USERNAME with your actual GitHub username
+- REPO_NAME with your repository name
+
+Example:
+git remote add origin https://github.com/johnsmith/traffic-volume-capstone.git
+
+------------------------------------------------------------
+STEP 6: IF GIT ASKS FOR USERNAME OR PASSWORD
+------------------------------------------------------------
+If Git asks for username/password:
+- use your GitHub username
+- use a Personal Access Token instead of your password if GitHub asks for one
+
+If you do not know how to create a token:
+- go to GitHub
+- open Settings
+- go to Developer settings
+- select Personal access tokens
+- create a token
+- use that token when Git asks for a password
+
+------------------------------------------------------------
+STEP 7: CHECK THE REPOSITORY ONLINE
+------------------------------------------------------------
+After the upload finishes:
+1. Open GitHub in your browser
+2. Go to your repository page
+3. Make sure all files are visible
+4. Click on README.md to check it opens correctly
+5. Confirm the folder structure is visible
+
+If you see all project folders, the upload worked.
+
+------------------------------------------------------------
+STEP 8: FINAL SUBMISSION TO THE EVALUATOR
+------------------------------------------------------------
+Submit the following:
+- GitHub repository link
+- Final project report or report file link
+- Any screenshots or additional evidence required by the course
+
+------------------------------------------------------------
+STEP 9: FINAL SUBMISSION MESSAGE
+------------------------------------------------------------
+Use a message like this:
+
+Completed the capstone project on traffic volume forecasting and pattern analysis using the provided Metro Interstate Traffic Volume dataset. The repository contains the full project workflow across SQL analysis, Python data cleaning and feature engineering, machine learning and clustering, explainability and recommendation logic, and final project documentation.
+
+GitHub repository: [PASTE YOUR LINK HERE]
+
+------------------------------------------------------------
+STEP 10: IF USING A PRIVATE REPOSITORY
+------------------------------------------------------------
+If you choose a private repository:
+1. Create the repo as private
+2. Add the evaluator as a collaborator
+3. Verify they can access it before submission
+4. Send the GitHub link only after access is confirmed
+
+------------------------------------------------------------
+STEP 11: IMPORTANT REMINDERS
+------------------------------------------------------------
+Before submitting:
+- confirm the dataset is in data/raw
+- confirm all phase folders are there
+- confirm the final folder contains the final report
+- confirm the README is visible
+- confirm the repository is public or the grader has access
+- do not delete any folder before submission
+
+------------------------------------------------------------
+STEP 12: SIMPLE SUMMARY
+------------------------------------------------------------
+In simple words:
+1. Make GitHub account
+2. Create repo
+3. Open PowerShell in your project folder
+4. Run the Git commands
+5. Push the project to GitHub
+6. Check that everything uploaded
+7. Submit the repo link
+
+That is all you need to do.
+
+------------------------------------------------------------
+STEP 13: READY TO START
+------------------------------------------------------------
+If you are ready, do this next:
+- create your GitHub repository
+- copy the commands above into PowerShell
+- push your folder to GitHub
+- then submit the repository link
+
+If you get stuck, read this file again and follow it line by line.

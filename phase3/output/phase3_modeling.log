@@ -1,0 +1,5 @@
+2026-11-04 14:32:28,311 INFO Starting Phase 3 modeling workflow.
+2026-11-04 14:32:28,389 INFO Loaded data with 48187 rows
+2026-11-04 14:32:33,344 INFO Regression metrics: {'model': 'LinearRegression', 'mae': 748.258934865382, 'rmse': 3534.1082465331638, 'r2': -2.1241003589646676}
+2026-11-04 14:32:33,346 INFO Classification metrics: {'model': 'LogisticRegression', 'accuracy': 0.8362730857024279, 'f1': 0.7018140589569161, 'confusion_matrix': [[6203, 971], [607, 1857]]}
+2026-11-04 14:32:33,347 INFO Clustering summary: {'n_clusters': 4, 'cluster_summary': {3: 5906.443507773155, 1: 4565.185515947467, 2: 2793.7463888645716, 0: 725.4597693114296}, 'cluster_counts': {0: 14305, 1: 13325, 2: 11423, 3: 9134}}

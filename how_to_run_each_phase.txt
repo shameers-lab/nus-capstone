@@ -1,0 +1,247 @@
+How to Run and Test Each Phase of the Capstone Project
+
+This file shows you how to run each program and how to check its output.
+
+IMPORTANT:
+- Open PowerShell in the project folder:
+  D:\PhotonUser\Shameer\Capstone
+- Use the Python path below when running scripts:
+  D:\PhotonUser\AppData\Local\Programs\Python\Python312\python.exe
+
+------------------------------------------------------------
+COMMAND LIST WITH EXPLANATION
+------------------------------------------------------------
+Use the commands below from PowerShell. Each command runs one part of the project and creates output files for that phase.
+
+1) Go to the project folder
+Command:
+cd "D:\PhotonUser\Shameer\Capstone"
+Explanation:
+- changes the current directory to the capstone project folder before running any script
+
+2) Run Phase 1 analysis
+Command:
+& "D:\PhotonUser\AppData\Local\Programs\Python\Python312\python.exe" "D:\PhotonUser\Shameer\Capstone\phase1\python\phase1_analysis.py"
+Explanation:
+- reads the raw traffic dataset
+- calculates descriptive statistics and correlations
+- creates the probability summary
+- saves the Phase 1 outputs in phase1\output
+
+3) Run Phase 1 dashboard visuals
+Command:
+& "D:\PhotonUser\AppData\Local\Programs\Python\Python312\python.exe" "D:\PhotonUser\Shameer\Capstone\phase1\python\phase1_dashboard_visuals.py"
+Explanation:
+- creates graphs showing traffic by hour, day, weather, temperature, and holiday status
+- saves PNG charts and a dashboard summary in phase1\output
+
+4) Run Phase 2 cleaning pipeline
+Command:
+& "D:\PhotonUser\AppData\Local\Programs\Python\Python312\python.exe" "D:\PhotonUser\Shameer\Capstone\phase2\python\phase2_pipeline.py"
+Explanation:
+- validates the dataset schema
+- removes duplicates, invalid rows, and outliers
+- fills or handles missing values
+- builds engineered features
+- saves the cleaned dataset in phase2\output
+
+5) Run Phase 3 modeling
+Command:
+& "D:\PhotonUser\AppData\Local\Programs\Python\Python312\python.exe" "D:\PhotonUser\Shameer\Capstone\phase3\python\phase3_modeling.py"
+Explanation:
+- trains regression and classification models
+- runs K-means clustering
+- saves performance metrics and summary files in phase3\output
+
+6) Run Phase 4 AI recommendation system
+Command:
+& "D:\PhotonUser\AppData\Local\Programs\Python\Python312\python.exe" "D:\PhotonUser\Shameer\Capstone\phase4\python\phase4_ai_system.py"
+Explanation:
+- calculates which features matter most
+- identifies low-traffic and high-risk time slots
+- creates a simple AI-style recommendation logic
+- saves the final system summary in phase4\output
+
+7) Open the final report and submission files
+Command:
+notepad "D:\PhotonUser\Shameer\Capstone\final\capstone_final_report.md"
+Explanation:
+- opens the final capstone report for checking the full story, results, and submission summary
+
+8) Read the project README
+Command:
+notepad "D:\PhotonUser\Shameer\Capstone\README.md"
+Explanation:
+- opens the main project overview and repository structure
+
+------------------------------------------------------------
+PHASE 1: SQL, STATISTICS, PROBABILITY, AND VISUALS
+------------------------------------------------------------
+Files:
+- phase1\sql\phase1_sql_queries.sql
+- phase1\python\phase1_analysis.py
+- phase1\python\phase1_dashboard_visuals.py
+
+1) Inspect and run the SQL script
+- Open SQLite or DB Browser for SQLite
+- Load the file: phase1\sql\phase1_sql_queries.sql
+- Run the queries in order
+
+This will help you review:
+- basic traffic pattern summaries
+- traffic by hour and day
+- holiday vs non-holiday effects
+- weather conditions and traffic volume
+
+2) Run the Python analysis script
+Command:
+& "D:\PhotonUser\AppData\Local\Programs\Python\Python312\python.exe" "D:\PhotonUser\Shameer\Capstone\phase1\python\phase1_analysis.py"
+
+What it does:
+- reads the raw CSV file
+- checks the dataset structure
+- creates descriptive statistics
+- creates the correlation summary
+- creates the probability summary
+- saves outputs in phase1\output
+
+Check output files in:
+- phase1\output\descriptive_statistics.csv
+- phase1\output\correlation_matrix.csv
+- phase1\output\hourly_traffic_summary.csv
+- phase1\output\probability_summary.json
+- phase1\output\phase1_summary.md
+- phase1\output\traffic_analysis.db
+
+3) Run the dashboard visuals script
+Command:
+& "D:\PhotonUser\AppData\Local\Programs\Python\Python312\python.exe" "D:\PhotonUser\Shameer\Capstone\phase1\python\phase1_dashboard_visuals.py"
+
+What it does:
+- creates charts about traffic by hour, day, weather, and holiday
+- saves image files in phase1\output
+
+Check output files in:
+- phase1\output\hourly_traffic_line.png
+- phase1\output\day_of_week_traffic.png
+- phase1\output\weather_traffic_bar.png
+- phase1\output\temp_vs_traffic.png
+- phase1\output\holiday_traffic.png
+- phase1\output\phase1_dashboard_story.md
+
+------------------------------------------------------------
+PHASE 2: DATA CLEANING AND FEATURE ENGINEERING
+------------------------------------------------------------
+File:
+- phase2\python\phase2_pipeline.py
+
+Command:
+& "D:\PhotonUser\AppData\Local\Programs\Python\Python312\python.exe" "D:\PhotonUser\Shameer\Capstone\phase2\python\phase2_pipeline.py"
+
+What it does:
+- validates the data schema
+- removes duplicate rows
+- removes bad or invalid rows
+- removes outliers using IQR
+- handles missing values
+- creates new engineering features
+- saves a cleaned dataset
+
+Check output files in:
+- phase2\output\cleaned_traffic_data.csv
+- phase2\output\feature_summary.json
+- phase2\output\phase2_summary.md
+- phase2\output\phase2_pipeline.log
+
+You should see the script print:
+- Phase 2 pipeline complete.
+- Cleaned rows: a number
+- Mean traffic volume: a number
+
+------------------------------------------------------------
+PHASE 3: MACHINE LEARNING AND CLUSTERING
+------------------------------------------------------------
+File:
+- phase3\python\phase3_modeling.py
+
+Command:
+& "D:\PhotonUser\AppData\Local\Programs\Python\Python312\python.exe" "D:\PhotonUser\Shameer\Capstone\phase3\python\phase3_modeling.py"
+
+What it does:
+- loads the cleaned dataset from phase2
+- builds a regression model
+- builds a classification model
+- runs K-means clustering
+- saves model metrics
+
+Check output files in:
+- phase3\output\phase3_metrics.json
+- phase3\output\phase3_summary.md
+- phase3\output\phase3_modeling.log
+
+Important things to review:
+- regression metrics
+- classification accuracy and F1-score
+- cluster summary
+
+------------------------------------------------------------
+PHASE 4: EXPLAINABILITY, RECOMMENDATION, AND AI SYSTEM DESIGN
+------------------------------------------------------------
+File:
+- phase4\python\phase4_ai_system.py
+
+Command:
+& "D:\PhotonUser\AppData\Local\Programs\Python\Python312\python.exe" "D:\PhotonUser\Shameer\Capstone\phase4\python\phase4_ai_system.py"
+
+What it does:
+- calculates feature importance
+- identifies which time features matter most
+- creates recommendation logic for low-traffic and high-traffic hours
+- provides a practical AI system summary
+
+Check output files in:
+- phase4\output\phase4_ai_summary.json
+- phase4\output\phase4_summary.md
+- phase4\output\phase4_ai_system.log
+
+Look for:
+- selected features
+- top feature
+- recommended low-traffic hours
+- recommended avoid hours
+- model metrics
+
+------------------------------------------------------------
+FINAL REPORT FILES
+------------------------------------------------------------
+Files in final folder:
+- final\capstone_final_report.md
+- final\responsible_ai_and_mlops.md
+- final\project_submission_checklist.md
+
+You should read these last to understand the complete story.
+
+------------------------------------------------------------
+HOW TO REVIEW OUTPUTS
+------------------------------------------------------------
+After each script runs, do this:
+1. Check if the script printed a success message
+2. Open the output folder for that phase
+3. Read the .md or .json files
+4. Open the generated CSV or PNG files
+5. Compare results with the phase goals
+
+------------------------------------------------------------
+QUICK CHECKLIST
+------------------------------------------------------------
+Before submission, make sure:
+- all scripts run without error
+- output files are created in each phase folder
+- final report exists
+- README is complete
+- GitHub upload steps are ready
+
+------------------------------------------------------------
+ONE-SENTENCE SUMMARY
+------------------------------------------------------------
+Each phase has its own script, its own output folder, and its own purpose: understand the data, clean it, model it, explain it, and prepare the final report.
